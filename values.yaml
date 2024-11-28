@@ -8,7 +8,7 @@ environnement: ovh
 phase: dev
 
 image:
-  repository: harbor.apps.dso.numerique-interieur.com/form-crtbs
+  repository: harbor.apps.dso.numerique-interieur.com/form-crtbs/
   name: java-demo
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
