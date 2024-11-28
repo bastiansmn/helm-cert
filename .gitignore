@@ -3,4 +3,4 @@ secrets
 secrets/*
 key.txt
 keys.txt
-**/*.dec
+**/*.dec.*
