@@ -8,26 +8,26 @@ environnement: ovh
 phase: dev
 
 image:
-  repository: harbor.apps.c6.numerique-interieur.com/mi-service-team
+  repository: harbor.apps.dso.numerique-interieur.com/form-crtbs
   name: java-demo
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
   tag: "master"
 
 imagePullSecrets:
-  - name: "default-secret"
+  - name: "registry-pull-secret"
 nameOverride: ""
 fullnameOverride: ""
 
 service:
-  type: NodePort
+  type: ClusterIP
   port: 8080
 
 ingress:
   enabled: true
   secret:
     enabled: true
-  host: plec-demo.dev.numerique-interieur.com
+  host: certification-bastian-somon.apps.dso-formation.hp.numerique-interieur.com
 
 resources:
   limits:
